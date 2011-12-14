@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="static/reset.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
 
+	<!-- Le Animate CSS -->
+	<link rel="stylesheet" href="static/animate.css" type="text/css" media="screen" />	
+
 	<!-- Le Google Web Font -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Rationale' rel='stylesheet' type='text/css'>
 	
@@ -26,8 +29,8 @@
 <h1>Best Bedtime</h1>
 
 <div class="container">
-<section id="content" class="hidden">
-    <h2 id="intro">I have to wake up at <span id="waketime" style="display:none;"></span></h2>
+<section id="content" class="hidden animated fadeIn">
+    <h2 id="intro">I have to wake up at <span id="waketime" class="animated pulse" style="display:none;"></span></h2>
     <div id="picker">
         <div class="waketime">
             <select id="hour"><option>hour</option></select>
@@ -55,7 +58,9 @@
     </div>
 
 
-       <a href="" id="back"><div class="back">Reset</div></a>
+       <a href="" id="back" class="back">Reset</a><span>Reset Time</span>
+	<p>Here are some examples of a <a class="tooltip" href="#">Classic<span class="classic">This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>,
+</p>
 <noscript>
     <div>
         <p>Hello, and welcome to sleepyti.me. Sleepyti.me is a bedtime calculator that counts backwards in sleep cycles and tells you when to go to sleep so that you can wake up refreshed!</p>
