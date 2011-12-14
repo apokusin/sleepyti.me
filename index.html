@@ -1,73 +1,75 @@
-<!doctype html>
-<!----------------------------------------------------
-sleepyti.me bedtime calculator
-Author: David Shaw (dshaw dot jobs at gmail dot com)
-URL: http://github.com/davidshaw/sleepyti.me/
------------------------------------------------------->
+<!DOCTYPE html>
 <html>
 <head>
 <title>sleepyti.me bedtime calculator</title>
-<meta name="Description" content="Sleepyti.me is a bedtime calculator that can help you calculate when to fall asleep. By counting backwards in sleep cycles, sleepyti.me has the ability to help you wake up refreshed, instead of feeling groggy. Sleepyti.me can also help you figure out what time to set your alarm if you are going to sleep at that moment.">
-<meta name="Keywords" content="sleep, refreshed, sleeping, health, bedtime, bed, bed time, calculator, ajax, javascript">
-<meta name="robots" content="index">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0;"/>
-<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
-<script src="static/jquery.js"></script>
-<script src="static/sleepytime.js"></script>
+	
+	<!-- I'm So Meta Even This Acronym -->
+	<meta name="Description" content="Sleepyti.me is a bedtime calculator that can help you calculate when to fall asleep. By counting backwards in sleep cycles, sleepyti.me has the ability to help you wake up refreshed, instead of feeling groggy. Sleepyti.me can also help you figure out what time to set your alarm if you are going to sleep at that moment.">
+	<meta name="Keywords" content="sleep, refreshed, sleeping, health, bedtime, bed, bed time, calculator, ajax, javascript, pokusin, artur">
+	<meta name="robots" content="index">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0;"/>
+
+	<!-- Le CSS LINK -->
+	<link rel="stylesheet" href="static/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
+
+	<!-- Le Google Web Font -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Orbitron' rel='stylesheet' type='text/css'>
+	
+	<!-- Le JavaScript -->
+	<script src="static/jquery.js"></script>
+	<script src="static/sleepytime.js"></script>
+
 </head>
 <body>
-<h1 id="title">sleepyti.me bedtime calculator</h1>
+<h1>sleepyti.me bedtime calculator</h1>
 
-<div id="content" class="hidden">
-    <p id="intro">I have to wake up at <span id="waketime" style="display:none;"></span></p>
+<section id="content" class="hidden">
+    <h2 id="intro">I have to wake up at <span id="waketime" style="display:none;"></span></h2>
     <div id="picker">
-        <div class="waketime center">
+        <div class="waketime">
             <select id="hour"><option>hour</option></select>
             <select id="minute"><option>minute</option></select>
             <select id="ampm"><option>AM</option><option>PM</option></select>
         </div>
-        <p class="center"><font color="#666666"><i>or, find out when to wake up if you go to bed now</i></p>
+        <p><em>or, find out when to wake up if you go to bed now</em></p>
 		<input type="button" value="zzz" id="sleepnow"/>
     </div>
 
     <div id="wake" class="hidden">
-        <p>It takes the average human <b>fourteen minutes</b> to fall asleep.</p>
+        <p>It takes the average human <strong>fourteen minutes</strong> to fall asleep.</p>
 		<p>If you head to bed right now, you should try to wake up at one of the following times:</p>
 		<div id="wake-times" class="hidden"></div>
     	<p>A good night's sleep consists of 5-6 complete sleep cycles.</p>
     </div>
 
     <div id="sleep" class="hidden">
-        <p>You should try to <b>fall asleep</b> at one of the following times:</p>
+        <p>You should try to <strong>fall asleep</strong> at one of the following times:</p>
         <div id="sleep-times" class="hidden"></div>
-		<p><font color="#0080FF">Please keep in mind that you should be <i>falling asleep</i> at these times.</p>
-		<p>The average adult human takes <b>fourteen minutes</b> to fall asleep, so plan accordingly!</font></p>
-		<p><font color="#9966CC">sleepyti.me works by counting backwards in <b>sleep cycles</b>. Sleep cycles typically last <b>90 minutes</b>.</p>
-		<p>Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <i>in between</i> cycles lets you wake up feeling refreshed and alert!</font></p>
+		<p>Please keep in mind that you should be <em>falling asleep</em> at these times.</p>
+		<p>The average adult human takes <strong>fourteen minutes</strong> to fall asleep, so plan accordingly!</p>
+		<p>sleepyti.me works by counting backwards in <strong>sleep cycles</strong>. Sleep cycles typically last <strong>90 minutes</strong>.</p>
+		<p>Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <em>in between</em> cycles lets you wake up feeling refreshed and alert!</p>
     </div>
 
 
-        <div class="back center"><a href="" id="back">back</a></div>
-    </div>
+        <div class="back"><a href="" id="back">Reset</a></div>
 <noscript>
-    <div style="font-family:Garamond; margin-bottom:130px;">
+    <div>
         <p>Hello, and welcome to sleepyti.me. Sleepyti.me is a bedtime calculator that counts backwards in sleep cycles and tells you when to go to sleep so that you can wake up refreshed!</p>
         <p>This site is written in Javascript, which must be enabled in order to use the page. Thanks for visiting, and sorry for the inconvenience!</p>
-    </div>
+    </div><!-- After No Script -->
 </noscript>
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19580945-1']);
-  _gaq.push(['_trackPageview']);
+</section><!-- #content -->
+<!-- Le Google Analytics -->
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
 <!-- END Google Analytics -->
+<!--
+Original Idea
+sleepyti.me bedtime calculator
+Author: David Shaw (dshaw dot jobs at gmail dot com)
+URL: http://github.com/davidshaw/sleepyti.me/
+-->
 </body>
 </html>

@@ -24,11 +24,6 @@ $(document).ready(function() {
 	render();
     window.scrollTo(0,1);
 	
-	function putads() {
-		// let's throw in some ads
-		$('#amazon').fadeIn(2500);
-	}
-	
 	// calculates an hour and a half back
 	function sleepback(hr, min, an) {
         var rmin = 0;
