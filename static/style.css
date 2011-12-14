@@ -46,15 +46,22 @@ em {
 
 .container {
 	position: absolute;
+	margin-left: -350px;
+	                   
+	margin-bottom: 0;
+	                   
+	margin-right: 0;
+	                   
+	margin-top: -250px;
+	                   
 	top: 50%;
 	left: 50%;
-	width: 600px;
+	width: 700px;
 	height: 500px;
     background-size: contain;
     -webkit-background-size: contain;
     -moz-background-size: contain;    
     display: block;
-    margin: -250px 0 0 -300px;
     position: absolute;
 }
 
@@ -88,6 +95,7 @@ section {
 }
 
 #picker {
+	margin-top: 20px;
 }
 
 #sleepnow {
@@ -108,7 +116,11 @@ section {
 
 
 .time {
-    color: #acacac;
+    border-color: #323232;
+    border-style: solid;
+    border-width: 2px;
+    text-shadow: 0px 0px 4px #ff0017;
+    color: #ffaaa2;
 	padding: 7px 10px;
 	margin: 0 10px;
     float: left;
@@ -121,18 +133,36 @@ section {
 }
 
 .label {
-	color: white;
 }
 .green {
+    text-shadow: 0px 0px 4px #caf2ba;
     color: #caf2bb;
 }
 
 .brightgreen {
+    text-shadow: 0px 0px 4px #30cc2a;
     color: #30cc2a;
 }
 
 .back {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/reset_icon.png);
+    height: 50px;
+    width: 50px;
+    border-color: #aaaaaa;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
     font-size: 34px;
+    text-indent: -99999px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .clear {
