@@ -1,22 +1,12 @@
 # Pokusin Additions
 
-The final result will be result will be displayed as two versions. Analog and Digital. The user will be able to choose which one they prefer. (Or maybe show both, Analog on top, Digital on bottom?)
+The final result will be result will be displayed as a digit version of time zone clocks.
 
-### Analog
-
-The analog results will be a series of analog clocks that are displayed in the fashion of "Time Zone Clocks". They will be side by side with a label under neath each one.
+The times will be shown horizontally. The labels will be shown below each of each clock.
 
 #### Concept Image: 
 
-![Analog Concept Image](https://github.com/apokusin/sleepyti.me/raw/master/analog_concept.jpg)
-
-### Digital
-
-The digital results will be much akin to the analog results. However, they will be digital, and shown vertically. The labels will be shown on the right side of each clock.
-
-#### Concept Image: 
-
-![Digital Concept Image](https://github.com/apokusin/sleepyti.me/raw/master/digital_concept.jpg)
+![Digital Concept Image](https://github.com/apokusin/sleepyti.me/raw/master/digital_concept.png)
 
 
 ## Original Readme
