@@ -1,10 +1,33 @@
 /* sleepyti.me */
+html {
+	color: #eaeaea;
+	background-color: #212121;
+}
+
 body {
+    color: #e3e3e3;
+    background-color: #212121;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
 }
 
+.wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	width: 960px;
+}
+
 p, .waketime, #wake-times, #sleep-times {
+
+	padding-bottom: 10px;
+
+	padding-top: 10px;
 
 }
 
@@ -29,7 +52,23 @@ em {
 }
 
 h1 {
+    text-shadow: 1px 1px 1px white;
+    font-weight: bold;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: #232323;
+    width: 100%;
+    background-color: #e9e9e9;
     font-size: 3em;
+}
+
+section {
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 #picker {
@@ -53,20 +92,27 @@ h1 {
 
 
 .time {
+    color: #acacac;
+    padding-right: 10px;
+    padding-left: 10px;
     float: left;
     font-size: 1.5em;
-    font-family: 'Orbitron', sans-serif;
+    font-family: Rationale, sans-serif;
 }
 
 .green {
-    color: #99CC66;
+    color: #6d9ccc;
 }
 
 .brightgreen {
-    color: #00CC33;
+    color: #3b73cc;
 }
 
 .back {
     font-size: 34px;
+}
+
+.clear {
+	clear: both;
 }
 

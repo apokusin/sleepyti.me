@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
 
 	<!-- Le Google Web Font -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Orbitron' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Rationale' rel='stylesheet' type='text/css'>
 	
 	<!-- Le JavaScript -->
 	<script src="static/jquery.js"></script>
@@ -22,8 +22,10 @@
 
 </head>
 <body>
-<h1>sleepyti.me bedtime calculator</h1>
 
+<h1>Calculator</h1>
+
+<div class="wrapper">
 <section id="content" class="hidden">
     <h2 id="intro">I have to wake up at <span id="waketime" style="display:none;"></span></h2>
     <div id="picker">
@@ -40,13 +42,13 @@
         <p>It takes the average human <strong>fourteen minutes</strong> to fall asleep.</p>
 		<p>If you head to bed right now, you should try to wake up at one of the following times:</p>
 		<div id="wake-times" class="hidden"></div>
-    	<p>A good night's sleep consists of 5-6 complete sleep cycles.</p>
+    	<p class="clear">A good night's sleep consists of 5-6 complete sleep cycles.</p>
     </div>
 
     <div id="sleep" class="hidden">
         <p>You should try to <strong>fall asleep</strong> at one of the following times:</p>
         <div id="sleep-times" class="hidden"></div>
-		<p>Please keep in mind that you should be <em>falling asleep</em> at these times.</p>
+		<p class="clear">Please keep in mind that you should be <em>falling asleep</em> at these times.</p>
 		<p>The average adult human takes <strong>fourteen minutes</strong> to fall asleep, so plan accordingly!</p>
 		<p>sleepyti.me works by counting backwards in <strong>sleep cycles</strong>. Sleep cycles typically last <strong>90 minutes</strong>.</p>
 		<p>Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <em>in between</em> cycles lets you wake up feeling refreshed and alert!</p>
@@ -62,6 +64,7 @@
 </noscript>
 
 </section><!-- #content -->
+</div><!-- .wrapper -->
 <!-- Le Google Analytics -->
 
 <!-- END Google Analytics -->
@@ -71,5 +74,6 @@ sleepyti.me bedtime calculator
 Author: David Shaw (dshaw dot jobs at gmail dot com)
 URL: http://github.com/davidshaw/sleepyti.me/
 -->
+
 </body>
 </html>
