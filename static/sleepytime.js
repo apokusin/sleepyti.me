@@ -111,10 +111,10 @@ $(document).ready(function() {
 			}
 			if(ctr == 0) {
 				if(min > 9) {
-					r = r + '<div class="time">' + dhr + ':' + min + ap + '</div>';
+					r = r + '<div class="time label">' + dhr + ':' + min + ap + '</div>';
 				}
 				else {
-					r = r + '<div class="time">' + dhr + ':0' + min + ap + '</div>';
+					r = r + '<div class="time label">' + dhr + ':0' + min + ap + '</div>';
 				}
 			}
 			else if(ctr == 4 || ctr == 5) {
@@ -135,10 +135,10 @@ $(document).ready(function() {
 			}
 			else {
 				if(min > 9) {
-					r = r + ' <div class="time">' + dhr + ':' + min + ap + '</div>';
+					r = r + ' <div class="time label">' + dhr + ':' + min + ap + '</div>';
 				}
 				else {
-					r = r + ' <div class="time">' + dhr + ':0' + min + ap + '</div>';
+					r = r + ' <div class="time label">' + dhr + ':0' + min + ap + '</div>';
 				}
 			}	
 		}
@@ -206,21 +206,21 @@ $(document).ready(function() {
 				var temp = '';
 				if(nmin > 9) {
 					if(c == 6) {
-						temp = '<div class="time" style="font-color=#01DF74;">' + nhr + ':' + nmin + ' ' + ampmt + '</div>';
+						temp = '<div class="time">' + nhr + ':' + nmin + ' ' + ampmt + '</div>';
 						times.push(temp);
 					}
 					else {
-						temp = '<div class="time" style="font-color=#01DF74;">' + nhr + ':' + nmin + ' ' + ampmt + '</div>';
+						temp = '<div class="time">' + nhr + ':' + nmin + ' ' + ampmt + '</div>';
 						times.push(temp);
 					}
 				}
 				else { // insert 0
 					if(c == 6) {
-						temp = '<div class="time" style="font-color=#01DF74;">' + nhr + ':0' + nmin + ' ' + ampmt + '</div>';
+						temp = '<div class="time">' + nhr + ':0' + nmin + ' ' + ampmt + '</div>';
 						times.push(temp);
 					}
 					else {
-						temp = '<div class="time" style="font-color=#01DF74;">' + nhr + ':0' + nmin + ' ' + ampmt + '</div>';
+						temp = '<div class="time">' + nhr + ':0' + nmin + ' ' + ampmt + '</div>';
 						times.push(temp);
 					}
 				
@@ -247,6 +247,6 @@ $(document).ready(function() {
 		}
 		$('#waketime').html(wtime);
 		$('#waketime').fadeIn(1000);
-		putads();
+
 	});
 });

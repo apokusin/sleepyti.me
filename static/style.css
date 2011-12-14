@@ -1,26 +1,19 @@
 /* sleepyti.me */
 html {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-image: url('../images/html_bg.png');
 	color: #eaeaea;
-	background-color: #212121;
+	background-color: #97181b;
+    height: 100%;	
 }
 
 body {
     color: #e3e3e3;
-    background-color: #212121;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
-    margin-top: 0px;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-}
-
-.wrapper {
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	width: 960px;
+    margin: 0 auto;
+    height: 100%;
 }
 
 p, .waketime, #wake-times, #sleep-times {
@@ -36,7 +29,7 @@ strong: {
 }
 
 a, a:visited {
-    color: #0080FF;
+    color: white;
 }
 
 input, select {
@@ -51,24 +44,47 @@ em {
 	font-style: italic;
 }
 
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 500px;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;    
+    display: block;
+    margin: -250px 0 0 -300px;
+    position: absolute;
+}
+
 h1 {
-    text-shadow: 1px 1px 1px white;
     font-weight: bold;
+    color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #111111;
+    text-shadow: 0px 1px 1px #414141;
     padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
-    color: #232323;
-    width: 100%;
-    background-color: #e9e9e9;
     font-size: 3em;
+    background: #191919 url('../images/topbar_bg.png') bottom left repeat-x;
+    -moz-box-shadow: 0px 5px 15px #151515;
+	-webkit-box-shadow: 0px 5px 15px #151515;
+	box-shadow: 0px 5px 15px #151515;
+}
+
+h2 {
+	text-shadow: 1px 1px 2px black;
+	color: #f6f6f6;
+	font-size: 2em;
 }
 
 section {
-	padding-left: 20px;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	text-align: center;
 }
 
 #picker {
@@ -93,19 +109,26 @@ section {
 
 .time {
     color: #acacac;
-    padding-right: 10px;
-    padding-left: 10px;
+	padding: 7px 10px;
+	margin: 0 10px;
     float: left;
     font-size: 1.5em;
     font-family: Rationale, sans-serif;
+	background: #1c1c1c;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
+.label {
+	color: white;
+}
 .green {
-    color: #6d9ccc;
+    color: #caf2bb;
 }
 
 .brightgreen {
-    color: #3b73cc;
+    color: #30cc2a;
 }
 
 .back {
@@ -115,4 +138,3 @@ section {
 .clear {
 	clear: both;
 }
-
