@@ -1,10 +1,7 @@
 /* sleepyti.me */
 html {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-image: url('http://littleboxdesign.s3.amazonaws.com/images/html_bg.jpg');
+	background: #97181b url('../images/html_bg.jpg') center center no-repeat;
 	color: #eaeaea;
-	background-color: #97181b;
     height: 100%;	
 }
 
@@ -262,4 +259,75 @@ section {
 	margin-right: 10px;
 }
 
+
+
+
+
+
+/* iPhone landscape */
+@media only screen and (min-width : 480px) and (max-device-width : 960px) and (orientation:landscape) {
+    
+    /* warning - this leaks over to ipad */
+    /* and narrow desktops! */
+
+    html {
+        background: #6e0708 url(../images/red_iphone.jpg) no-repeat center center;
+        background-size: 480px auto;
+
+        width: 320px;
+        width: 480px;
+
+        min-height: 270px;
+        height: 100%;
+        }
+
+
+}
+
+/* iPhone portrait */
+@media only screen and (max-width: 320px) and (orientation:portrait) {
+
+    html {
+        background: #6e0708 url(../images/red_iphone_vert.jpg) no-repeat center center;
+        background-size: 320px auto;
+
+        width: 320px;
+        min-height: 420px;
+        height: 100%;
+        }
+
+
+}
+
+/* iPads (landscape) ----------- */
+@media handheld, only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    html {
+        background: #6e0708 url(../images/red_ipad.jpg) no-repeat center center;
+        background-size: 1024px auto;
+        width: 1024px;
+        }
+
+
+
+}
+
+/* iPads (portrait) ----------- */
+@media handheld, only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    html {
+        background: #6e0708 url(../images/red_ipad_vert.jpg) no-repeat center center;
+        background-size: 768px auto;
+        width: 768px;
+        }
+
+
+}
+
+
+/* Styles for desktop and large screen ----------- */
+@media only screen and (min-width: 1024px) {
+    
+
+}
 
