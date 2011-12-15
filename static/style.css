@@ -2,7 +2,7 @@
 html {
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-image: url('../images/html_bg.png');
+	background-image: url('http://cf.littleboxdesign.com/images/html_bg.png');
 	color: #eaeaea;
 	background-color: #97181b;
     height: 100%;	
@@ -179,15 +179,15 @@ section {
 }
 
 .back {
-    margin-top: 100px;
     color: #939393;
     display: block;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 10px;
     padding-top: 10px;
-
+	margin: 0 auto;
     font-size: 2em;
+    margin-top: 50px;
 
 }
 
@@ -220,7 +220,7 @@ section {
 			margin-left: 0; width: 100px;
 		}
 		#wake-times {
-			width: 670px;
+			width: 680px;
 			margin-right: auto;
 			margin-left: auto;
 			margin-bottom: 0px;
@@ -234,7 +234,7 @@ section {
 			width: 450px;
 		}
 		.toppad {
-			margin-top: 100px;
+			margin-top: 60px;
 		}
 		.tip {
 			margin-left: 30px;
@@ -249,3 +249,16 @@ section {
 			position: relative;
 		}
 		
+		
+.logos {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	width: 220px;
+	margin-left: -100px;
+	
+}
+
+.logos img {
+	margin-right: 10px;
+}
