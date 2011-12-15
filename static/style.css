@@ -99,6 +99,7 @@ section {
 	margin-top: 20px;
 }
 
+
 #sleepnow, select {
     color: #9e9e9e;
 	font-size: 1.2em;
@@ -115,9 +116,9 @@ section {
     background: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
     background: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
     border: solid 1px #dcdcdc;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     margin-right: 10px;
 	cursor: pointer;
 	-moz-appearance:button;
@@ -126,12 +127,14 @@ section {
 #sleepnow:hover, select:hover {
     color: #333;
     border-color: #999;
-    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2) -webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); 
+    -webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 #sleepnow:active, select:active {
     color: #000;
     border-color: #444;
+    outline: none;
 }
 
 
@@ -262,3 +265,5 @@ section {
 .logos img {
 	margin-right: 10px;
 }
+
+
