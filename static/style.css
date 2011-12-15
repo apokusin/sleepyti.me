@@ -1,6 +1,6 @@
 /* sleepyti.me */
 html {
-	background-position: center top;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-image: url('http://littleboxdesign.s3.amazonaws.com/images/html_bg.jpg');
 	color: #eaeaea;
@@ -48,13 +48,9 @@ em {
 .container {
 	position: absolute;
 	margin-left: -350px;
-	                   
 	margin-bottom: 0;
-	                   
 	margin-right: 0;
-	                   
 	margin-top: -250px;
-	                   
 	top: 50%;
 	left: 50%;
 	width: 700px;
