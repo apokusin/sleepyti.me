@@ -15,7 +15,7 @@
 
 	<!-- Le Animate CSS -->
 	<link rel="stylesheet" href="static/animate.css" type="text/css" media="screen" />	
-
+	
 	<!-- Le Google Web Font -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Rationale' rel='stylesheet' type='text/css'>
 	
@@ -30,35 +30,38 @@
 
 <div class="container">
 <section id="content" class="hidden animated fadeIn">
-    <h2 id="intro">I have to wake up at <span id="waketime" class="animated pulse" style="display:none;"></span></h2>
+    <h2 id="intro">You have to wake up at <span id="waketime" class="animated pulse" style="display:none;"></span></h2>
     <div id="picker">
         <div class="waketime">
             <select id="hour"><option>hour</option></select>
             <select id="minute"><option>minute</option></select>
             <select id="ampm"><option>AM</option><option>PM</option></select>
         </div>
-        <p><em>or, find out when to wake up if you go to bed now</em></p>
-		<input type="button" value="zzz" id="sleepnow"/>
+        <p class="toppad"><em>or, find out when to wake up if you go to bed now</em></p>
+		<input type="button" value="Zzz" id="sleepnow"/>
     </div>
 
     <div id="wake" class="hidden">
-        <p>It takes the average human <strong>fourteen minutes</strong> to fall asleep.</p>
 		<p>If you head to bed right now, you should try to wake up at one of the following times:</p>
-		<div id="wake-times" class="hidden"></div>
-    	<p class="clear">A good night's sleep consists of 5-6 complete sleep cycles.</p>
+		<div id="wake-times" class="hidden toppad"></div>
+    	<p class="clear toppad tip">A good night's sleep consists of 5-6 complete sleep cycles.</p>
+        <p class="tip">It takes the average human <strong>fourteen minutes</strong> to fall asleep.</p>
+
     </div>
 
     <div id="sleep" class="hidden">
         <p>You should try to <strong>fall asleep</strong> at one of the following times:</p>
-        <div id="sleep-times" class="hidden"></div>
-		<p class="clear">Please keep in mind that you should be <em>falling asleep</em> at these times.</p>
-		<p>The average adult human takes <strong>fourteen minutes</strong> to fall asleep, so plan accordingly!</p>
-		<p>sleepyti.me works by counting backwards in <strong>sleep cycles</strong>. Sleep cycles typically last <strong>90 minutes</strong>.</p>
-		<p>Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <em>in between</em> cycles lets you wake up feeling refreshed and alert!</p>
+        <div id="sleep-times" class="hidden toppad"></div>
+		<p class="tip toppad">The average adult human takes <strong>fourteen minutes</strong> to fall asleep, so plan accordingly!</p>
+		<p class="tip">sleepyti.me works by counting backwards in <strong>sleep cycles</strong>. Sleep cycles typically last <strong>90 minutes</strong>.</p>
+		<p class="tip">Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <em>in between</em> cycles lets you wake up feeling refreshed and alert!</p>
     </div>
 
 
-<a class="tooltip back" id="back" href=""><img src="images/reset_icon.png" alt="Reset"><span>Reset</span></a>
+<a class="tooltip back" id="back" href="">
+<img src="images/reset_icon.png" alt="Rest ALL THE THINGS!">
+	<span>Reset</span>
+</a>
 
 <noscript>
     <div>
