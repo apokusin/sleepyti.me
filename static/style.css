@@ -76,6 +76,8 @@ h1 {
     -moz-box-shadow: 0px 5px 15px #151515;
 	-webkit-box-shadow: 0px 5px 15px #151515;
 	box-shadow: 0px 5px 15px #151515;
+	position: relative;
+	z-index:1;
 }
 
 h2 {
