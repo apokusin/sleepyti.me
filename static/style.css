@@ -150,20 +150,9 @@ section {
     padding-left: 5px;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: rgba(50,50,50,0.5);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url(../images/reset_icon.png);
-    height: 50px;
-    width: 50px;
-    border-color: #aaaaaa;
-    border-style: solid;
-    border-width: 1px;
+
     font-size: 34px;
-    text-indent: -99999px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+
 }
 
 .clear {
@@ -177,8 +166,11 @@ section {
 
 /* TOOL TIP */
 		.tooltip {
-			border-bottom: 1px dotted #000000; color: #000000; outline: none;
-			cursor: help; text-decoration: none;
+			font-size: 1em;
+			color: #d3d3d3; 
+			outline: none;
+			cursor: pointer; 
+			text-decoration: none;
 			position: relative;
 		}
 		.tooltip span {
@@ -186,11 +178,11 @@ section {
 			position: absolute;
 		}
 		.tooltip:hover span {
-			border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-			font-family: Calibri, Tahoma, Geneva, sans-serif;
-			position: absolute; left: 1em; top: 2em; z-index: 99;
-			margin-left: 0; width: 250px;
+			position: absolute; 
+			left: -20px; 
+			top: 50px; 
+			z-index: 99;
+			margin-left: 0; width: 100px;
 		}
 
-		.classic { padding: 0.8em 1em; }
+		
