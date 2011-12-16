@@ -155,9 +155,9 @@ $(document).ready(function() {
 		answ = knockout(d); // knockout takes a Date() and returns a string of wake times
 		$('#intro').hide();
 		$('#picker').hide();
-		$('#wake').show()
+		$('#wake').fadeIn()
 		$('#wake-times').html(answ);
-		$('#wake-times').show(250);
+		$('#wake-times').fadeIn(250);
 		putads();
 	});
 	
@@ -234,9 +234,9 @@ $(document).ready(function() {
 			txt = txt + times[i];
 		}
 		$('#picker').hide();
-		$('#sleep').show()
+		$('#sleep').fadeIn()
 		$('#sleep-times').html(txt)
-		$('#sleep-times').show(500)
+		$('#sleep-times').fadeIn(500)
 		
 		var wtime = "";
 		if(orig[1] > 9) {
