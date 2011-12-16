@@ -1,6 +1,6 @@
 /* sleepyti.me */
 html {
-	background: #97181b url('../images/html_bg_blue.jpg') center center no-repeat;
+	background: #0b2043 url('../images/html_bg_blue.jpg') center center no-repeat;
 	color: #eaeaea;
     height: 100%;	
 }
@@ -272,8 +272,8 @@ section {
     /* warning - this leaks over to ipad */
     /* and narrow desktops! */
 
-    html {
-        background: #6e0708 url(../images/red_iphone.jpg) no-repeat center center;
+    body {
+        background: #091e3c url(../images/red_iphone.jpg) no-repeat center center;
         background-size: 480px auto;
 
         width: 320px;
@@ -289,8 +289,8 @@ section {
 /* iPhone portrait */
 @media only screen and (max-width: 320px) and (orientation:portrait) {
 
-    html {
-        background: #6e0708 url(../images/red_iphone_vert.jpg) no-repeat center center;
+    body {
+        background: #0a2244 url(../images/red_iphone_vert.jpg) no-repeat center center;
         background-size: 320px auto;
 
         width: 320px;
@@ -304,8 +304,8 @@ section {
 /* iPads (landscape) ----------- */
 @media handheld, only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
-    html {
-        background: #6e0708 url(../images/red_ipad.jpg) no-repeat center center;
+    body {
+        background: #0a2244 url(../images/red_ipad.jpg) no-repeat center center;
         background-size: 1024px auto;
         width: 1024px;
         }
@@ -317,8 +317,8 @@ section {
 /* iPads (portrait) ----------- */
 @media handheld, only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
-    html {
-        background: #6e0708 url(../images/red_ipad_vert.jpg) no-repeat center center;
+    body {
+        background: #0a2244 url(../images/red_ipad_vert.jpg) no-repeat center center;
         background-size: 768px auto;
         width: 768px;
         }
