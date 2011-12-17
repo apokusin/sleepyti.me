@@ -47,8 +47,7 @@ em {
 	margin-left: -350px;
 	margin-bottom: 0;
 	margin-right: 0;
-	margin-top: -250px;
-	top: 50%;
+	top: 250px;
 	left: 50%;
 	width: 700px;
 	height: 500px;
@@ -95,7 +94,7 @@ section {
 }
 
 
-#sleepnow, select {
+#sleepnow, select, input, button {
     color: #9e9e9e;
 	font-size: 1.2em;
     text-decoration: none;
@@ -114,19 +113,25 @@ section {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    margin-right: 10px;
+    margin-right: 15px;
 	cursor: pointer;
 	-moz-appearance:button;
     -webkit-appearance:button;
+    max-width: 75px;
 }
-#sleepnow:hover, select:hover {
+
+input {
+	max-width: 50px;
+}
+
+#sleepnow:hover, select:hover, button:hover, input:hover {
     color: #333;
     border-color: #999;
     -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); 
     -webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
-#sleepnow:active, select:active {
+#sleepnow:active, select:active, button:hover, input:active {
     color: #000;
     border-color: #444;
     outline: none;
@@ -273,7 +278,6 @@ section {
     /* and narrow desktops! */
 
     body {
-        background: #091e3c url(../images/red_iphone.jpg) no-repeat center center;
         background-size: 480px auto;
 
         width: 320px;
@@ -290,7 +294,6 @@ section {
 @media only screen and (max-width: 320px) and (orientation:portrait) {
 
     body {
-        background: #0a2244 url(../images/red_iphone_vert.jpg) no-repeat center center;
         background-size: 320px auto;
 
         width: 320px;
@@ -305,7 +308,6 @@ section {
 @media handheld, only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
     body {
-        background: #0a2244 url(../images/red_ipad.jpg) no-repeat center center;
         background-size: 1024px auto;
         width: 1024px;
         }
@@ -318,9 +320,12 @@ section {
 @media handheld, only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
     body {
-        background: #0a2244 url(../images/red_ipad_vert.jpg) no-repeat center center;
         background-size: 768px auto;
         width: 768px;
+        }
+
+    input {
+        	width: 10px;
         }
 
 

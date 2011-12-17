@@ -41,6 +41,11 @@ MMMMMMMMMMMMMMMMMMMMMMm+`
 	<!-- Le JavaScript -->
 	<script src="static/jquery.js"></script>
 	<script src="static/sleepytime.js"></script>
+	
+	<!-- HTML5 compat -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
 </head>
 <body>
@@ -52,9 +57,10 @@ MMMMMMMMMMMMMMMMMMMMMMm+`
     <h2 id="intro">You have to wake up at <span id="waketime" class="animated pulse" style="display:none;"></span></h2>
     <div id="picker">
         <div class="waketime">
+            <input id="hour" placeholder="hour" />
+            <input id="minute" placeholder="min" min="00" />
             <select id="ampm"><option>AM</option><option>PM</option></select>
-            <select id="hour"><option>hour</option></select>
-            <select id="minute"><option>minute</option></select>
+            <button id="calc">Go</button>
         </div>
         <p class="toppad"><em>or, find out when to wake up if you go to bed now</em></p>
 		<input type="button" value="Zzz" id="sleepnow"/>

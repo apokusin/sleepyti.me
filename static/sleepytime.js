@@ -162,7 +162,7 @@ $(document).ready(function() {
 	});
 	
 	// user changes the list, so we calculate times!
-	$("#picker select").change(function () {
+	  $('#calc').click(function() {
 		if($("#hour").val() == 'hour' || $("#minute").val() == 'minute') {
 			return false;
 		}
