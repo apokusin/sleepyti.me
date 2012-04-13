@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <!-- A Little Box Design Project
-
-        +d   NMMMMMMMMMMMNmho.  
-      dNMN   NMMMMmmmmmmNMMMMM: 
-   dMMMMMN   NMMMM      `+MMMMh 
- dNMMMMMMN   NMMMM      `:MMMMo 
-MMMMMMMMMN   NMMMMyyyyyydNMMd/  
-MMMMMMMMMN   NMMMMmmmmmmNNMMmh: 
+littleboxdesign.com
+        +d   NMMMMMMMMMMMNmho.
+      dNMN   NMMMMmmmmmmNMMMMM:
+   dMMMMMN   NMMMM      `+MMMMh
+ dNMMMMMMN   NMMMM      `:MMMMo
+MMMMMMMMMN   NMMMMyyyyyydNMMd/
+MMMMMMMMMN   NMMMMmmmmmmNNMMmh:
 MMMMMMMMMN   NMMMM``````.-yMMMM+
 MMMMMMMMMN   NMMMM        -MMMMd
 MMMMMMMMMN   NMMMM-....../dMMMMs
 MMMMMMMMMN   NMMMMNNNNNNNMMMMmo`
-MMMMMMMMMN   yhhhhhhhhhhhys+:`  
+MMMMMMMMMN   yhhhhhhhhhhhys+:`
 MMMMMMMMMM
 MMMMMMMMMMNNNNNNNNNNNNNNNNNNNmo.
-MMMMMMMMMMMMMMMMMMMMMMMMMMMd+`  
-MMMMMMMMMMMMMMMMMMMMMMMMNy-     
+MMMMMMMMMMMMMMMMMMMMMMMMMMMd+`
+MMMMMMMMMMMMMMMMMMMMMMMMNy-
 MMMMMMMMMMMMMMMMMMMMMMm+`
 
 -->
@@ -33,15 +33,17 @@ MMMMMMMMMMMMMMMMMMMMMMm+`
 	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
 
 	<!-- Le Animate CSS -->
-	<link rel="stylesheet" href="static/animate.css" type="text/css" media="screen" />	
-	
+	<link rel="stylesheet" href="static/animate.css" type="text/css" media="screen" />
+
 	<!-- Le Google Web Font -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Rationale' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Le JavaScript -->
 	<script src="static/jquery.js"></script>
 	<script src="static/sleepytime.js"></script>
-	
+  <script src="static/placeholder.js"></script>
+  <script src="static/validate.js"></script>
+
 	<!-- HTML5 compat -->
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,13 +59,13 @@ MMMMMMMMMMMMMMMMMMMMMMm+`
     <h2 id="intro">You have to wake up at <span id="waketime" class="animated pulse" style="display:none;"></span></h2>
     <div id="picker">
         <div class="waketime">
-            <input id="hour" placeholder="hour" />
-            <input id="minute" placeholder="min" min="00" />
+            <input id="hour" placeholder="hour" maxlength="2"></input>
+            <input id="minute" placeholder="min" maxlength="2"></input>
             <select id="ampm"><option>AM</option><option>PM</option></select>
-            <button id="calc">Go</button>
+            <input type="button" id="calc" value="Go"></input>
         </div>
         <p class="toppad"><em>or, find out when to wake up if you go to bed now</em></p>
-		<input type="button" value="Zzz" id="sleepnow"/>
+		<input type="button" value="Zzz" id="sleepnow"></input>
     </div>
 
     <div id="wake" class="hidden">
@@ -99,15 +101,15 @@ MMMMMMMMMMMMMMMMMMMMMMm+`
 </div><!-- .container -->
 
 <div class="logos">
-	
+
 	<a href="http://littleboxdesign.com"><img src="images/lbox.png" alt="Little Box Design"></a>
 	<a href="https://github.com/apokusin/sleepyti.me"><img src="images/git.png" alt="GitHub: Social Coding"></a>
 	<a href="http://pokusin.com"><img src="images/pokusin.png" alt="Artur Pokusin's Home Page"></a>
-	
+
 </div>
 <div class="sbux" style="position: absolute; bottom: 5px; right: 5px;"><a href="http://www.starbucks.com/store/15625"><img src="images/sbux2.png" alt="Coded and Designed at Starbucks" /></a> </div>
 
-<div class="original animated fadeInRightBig delayed" style="position: absolute; top: 70px; right: 0px; z-index:0;"><a href="http://www.sleepyti.me"><img src="images/original_flag.png" alt="Original By David Shaw" /></a> </div>
+<div class="original delayed" style="position: absolute; top: 74px; right: 0px; z-index:0;"><a href="http://www.sleepyti.me"><img src="images/original_flag.png" alt="Original By David Shaw" /></a> </div>
 <!-- Le Google Analytics -->
 <script type="text/javascript">
 
@@ -121,6 +123,18 @@ MMMMMMMMMMMMMMMMMMMMMMm+`
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+<script>
+// Hour/minute Validation
+$(function(){
+
+  var hour = new LiveValidation('hour');
+  hour.add( Validate.Numericality, { minimum: 1, maximum: 12, allowNull: false, onlyInteger: true, notANumberMessage: " ", notAnIntegerMessage: " ", wrongNumberMessage: " ", tooLowMessage: " ", tooHighMessage: " " } );
+  var minute = new LiveValidation('minute');
+  minute.add( Validate.Numericality, { minimum: 0, maximum: 59, allowNull: false, onlyInteger: true, notANumberMessage: " ", notAnIntegerMessage: " ", wrongNumberMessage: " ", tooLowMessage: " ", tooHighMessage: " " } );
+  minute.add( Validate.Exclusion, { within: [ ' ', '  ' ], failureMessage: "Don't use spaces" } );
+
+});
 </script>
 <!-- END Google Analytics -->
 <!--
