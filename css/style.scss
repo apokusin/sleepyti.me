@@ -1,4 +1,5 @@
 /* sleepyti.me */
+
 html {
 	background: #0b2043 url('../images/html_bg_blue.jpg') top center no-repeat;
 	color: #eaeaea;
@@ -25,7 +26,7 @@ p, .waketime, #wake-times, #sleep-times {
   margin: 0 auto;
 }
 
-strong: {
+strong {
 	font-weight: bold;
 }
 
@@ -134,7 +135,7 @@ input:active {
 }
 
 .hidden {
-    display: none;
+    // display: none;
 }
 
 .center {

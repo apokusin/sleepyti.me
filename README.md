@@ -1,12 +1,10 @@
-First of all:
-
 ### Thank you David Shaw!
 
-Without your original code, I wouldn't have been able to create the awesome design! 
+Without your original code, I wouldn't have been able to create the awesome design!
 
-## Function
+## Functionality
 
-The site functions as an optimal bedtime calculator. It runs on the fact that most adult humans have sleep cycles that last 90 minutes long. Knowing this, David created a script that counts backwards from a time that the user sets, lapping every 90 minutes, to the current time. 
+The site functions as an optimal bedtime calculator. It runs on the fact that most adult humans have sleep cycles that last 90 minutes long. Knowing this, David created a script that counts backwards from a time that the user sets, lapping every 90 minutes, to the current time.
 
 > Taking into account that most adult humans also take about 14 minutes to fall asleep, the 14 minutes is added to the actual time to wake up.
 
@@ -21,7 +19,7 @@ The bottom option contains only a single button with the label: 'Zzz'. You can c
 
 ## In conclusion
 
-The last option is a simple "Reset" button, where the user can click it to return to the original state of the site. 
+The last option is a simple "Reset" button, where the user can click it to return to the original state of the site.
 
 **Hope you enjoy it!**
 
@@ -31,7 +29,7 @@ The final result will be result will be displayed as a digit version of time zon
 
 The times will be shown horizontally. The labels will be shown below each of each clock.
 
-#### Concept Image: 
+#### Concept Image:
 
 ![Digital Concept Image](https://github.com/apokusin/sleepyti.me/raw/master/digital_concept.png)
 
