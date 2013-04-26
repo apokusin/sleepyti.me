@@ -94,18 +94,6 @@
 })();
 
 </script>
-<script>
-// Hour/minute Validation
-$(function(){
-
-  var hour = new LiveValidation('hour');
-  hour.add( Validate.Numericality, { minimum: 1, maximum: 12, allowNull: false, onlyInteger: true, notANumberMessage: " ", notAnIntegerMessage: " ", wrongNumberMessage: " ", tooLowMessage: " ", tooHighMessage: " " } );
-  var minute = new LiveValidation('minute');
-  minute.add( Validate.Numericality, { minimum: 0, maximum: 59, allowNull: false, onlyInteger: true, notANumberMessage: " ", notAnIntegerMessage: " ", wrongNumberMessage: " ", tooLowMessage: " ", tooHighMessage: " " } );
-  minute.add( Validate.Exclusion, { within: [ ' ', '  ' ], failureMessage: "Don't use spaces" } );
-
-});
-</script>
 <!-- END Google Analytics -->
 <!--
 Original Idea
