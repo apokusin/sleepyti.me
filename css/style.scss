@@ -1,3 +1,6 @@
+@import 'bourbon';
+@import "../neat/neat";;
+
 /* sleepyti.me */
 
 html {
@@ -10,14 +13,8 @@ body {
   line-height: 32px;
   color: #e3e3e3;
   font-size: 1em;
-  margin: 0 auto;
-  font-family: "museo-slab",serif;
-}
-
-h1 {
   font-family: "omnes-pro",sans-serif;
 }
-
 
 p, .waketime, #wake-times, #sleep-times {
   position: relative;
@@ -26,8 +23,7 @@ p, .waketime, #wake-times, #sleep-times {
 }
 
 .waketime {
-  width: auto;
-  margin: 0 auto;
+  @include outer-container;
 }
 
 strong {
@@ -54,8 +50,6 @@ em {
 }
 
 .container {
-  margin: 0 auto;
-  width: 100%;
   height: 500px;
   margin-top: 15%;
 }
@@ -92,31 +86,58 @@ select, input {
   font-size: 1.2em;
   text-decoration: none;
   padding: 7px 12px;
-  text-shadow: 0px 1px 1px #fff;
   background: #f3f3f3;
-  border: 2px solid #cdcdcd;
+  border: 2px solid #f3f3f3;
   border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   margin: 0px 8px;
   cursor: pointer;
   -moz-appearance: button;
   -webkit-appearance: button;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  @include transition(all 100ms ease-in-out);
 }
 
 select:hover, input:hover, select:focus {
   color: #333;
-  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  border: 2px solid #333;
+  border-color: #91aac5;
   outline: none;
   background: #fff;
+}
+
+.time_wrap {
+  display: inline-block;
+  border: 2px solid #f3f3f3;
+  padding: 0;
+  border-radius: 4px;
+  background: #f3f3f3;
+  @include transition(all 100ms ease-in-out);
+  &:hover, &:focus {
+    border-color: #91aac5;
+  }
+  &:active {
+    position:relative;
+    top: 1px;
+  }
+  input, input:hover, input:focus {
+    border: none;
+    margin: 0;
+    background: none;
+    width: 55px;
+  }
+  input:active {
+    top: 0;
+  }
+  #hour {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid rgba(0,0,0,0.1);
+  }
+  #minute {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+#minute {
 }
 
 input {
@@ -142,7 +163,6 @@ input {
 
 #footer {
   font-color: #666666;
-  font-family: 'Lato', sans-serif;
 }
 
 .hidden {
@@ -154,9 +174,7 @@ input {
 }
 
 .time {
-  border-color: #323232;
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid #323232;
   color: #FFAAA2;
   padding: 7px 10px;
   margin: 0 10px;
@@ -165,19 +183,15 @@ input {
   font-family: "Rationale", sans-serif;
   background: #1C1C1C;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   margin: 0 auto;
   margin-right: 20px;
   display: inline-block;
   text-align: center;
-  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 #sleep-times .time {
-  text-shadow: 0px 0px 4px #caf2ba;
+  // text-shadow: 0px 0px 4px #caf2ba;
   color: #caf2bb;
 }
 
@@ -186,22 +200,19 @@ input {
 }
 
 .green {
-  text-shadow: 0px 0px 4px #caf2ba;
+  // text-shadow: 0px 0px 4px #caf2ba;
   color: #fb0;
 }
 
 .brightgreen {
-  text-shadow: 0px 0px 4px #30cc2a;
+  // text-shadow: 0px 0px 4px #30cc2a;
   color: #30cc2a;
 }
 
 .back {
   color: #939393;
   display: block;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px 5px;
   margin: 0 auto;
   font-size: 2em;
   margin-top: 50px;
@@ -256,9 +267,6 @@ input {
   margin-left: 30px;
   text-align: center;
   padding-left: 40px;
-  background-position: left 10px;
-  background-repeat: no-repeat;
-  background-image: url('../images/info_icon.png');
 }
 
 .back:active, a:active {

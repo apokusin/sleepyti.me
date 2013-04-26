@@ -33,15 +33,16 @@
   <div class="container">
     <h1>sleepyti.me</h1>
     <section id="content" class="hidden animated fadeIn">
-      <h2 id="intro">You have to wake up at <span id="waketime" class="animated pulse" style="display:none;"></span></h2>
+      <h2 id="intro">You have to wake up at <span id="waketime" class="animated pulse"></span></h2>
       <div id="picker">
         <div class="waketime">
-          <input id="hour" placeholder="hour" maxlength="2"></input>
-          <input id="minute" placeholder="min" maxlength="2"></input>
+          <div class="time_wrap">
+            <input id="hour" placeholder="HH" maxlength="2"></input><input id="minute" placeholder="MM" maxlength="2"></input>
+          </div>
           <select id="ampm"><option>AM</option><option>PM</option></select>
           <input type="button" id="calc" value="Go"></input>
         </div>
-        <p class="toppad"><em>or, find out when to wake up if you go to bed now</em></p>
+        <p class="toppad">or, find out when to wake up if you go to bed now:</p>
         <input type="button" value="Zzz" id="sleepnow"></input>
       </div>
 
