@@ -21,30 +21,29 @@ MMMMMMMMMMMMMMMMMMMMMMm+`
 -->
 <html>
 <head>
-<title>sleepyti.me</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<!-- I'm So Meta Even This Acronym -->
-	<meta name="Description" content="Sleepyti.me is a bedtime calculator that can help you calculate when to fall asleep. By counting backwards in sleep cycles, sleepyti.me has the ability to help you wake up refreshed, instead of feeling groggy. Sleepyti.me can also help you figure out what time to set your alarm if you are going to sleep at that moment.">
-	<meta name="Keywords" content="sleep, refreshed, sleeping, health, bedtime, bed, bed time, calculator, ajax, javascript, pokusin, artur">
-	<meta name="robots" content="index">
+  <title>sleepyti.me</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="Description" content="Sleepyti.me is a bedtime calculator that can help you calculate when to fall asleep. By counting backwards in sleep cycles, sleepyti.me has the ability to help you wake up refreshed, instead of feeling groggy. Sleepyti.me can also help you figure out what time to set your alarm if you are going to sleep at that moment.">
+  <meta name="Keywords" content="sleep, refreshed, sleeping, health, bedtime, bed, bed time, calculator, ajax, javascript, pokusin, artur">
+  <meta name="robots" content="index">
 
-	<!-- Le CSS LINK -->
-	<link rel="stylesheet" href="static/reset.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
+  <!-- Le CSS LINK -->
+  <link rel="stylesheet" href="static/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
 
-	<!-- Le Animate CSS -->
-	<link rel="stylesheet" href="static/animate.css" type="text/css" media="screen" />
+  <!-- Le Animate CSS -->
+  <link rel="stylesheet" href="static/animate.css" type="text/css" media="screen" />
 
-	<!-- Le Google Web Font -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Rationale' rel='stylesheet' type='text/css'>
+  <!-- Le Google Web Font -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Rationale' rel='stylesheet' type='text/css'>
 
-	<!-- Le JavaScript -->
-	<script src="static/jquery.js"></script>
-	<script src="static/sleepytime.js"></script>
+  <!-- Le JavaScript -->
+  <script src="static/jquery.js"></script>
+  <script src="static/sleepytime.js"></script>
   <script src="static/placeholder.js"></script>
   <script src="static/validate.js"></script>
 
-	<!-- HTML5 compat -->
+  <!-- HTML5 compat -->
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -52,76 +51,76 @@ MMMMMMMMMMMMMMMMMMMMMMm+`
 </head>
 <body>
 	<!-- Thank you to APRIL ZERO for the background image. http://aprilzero.com/ -->
-<h1>sleepyti.me</h1>
+  <h1>sleepyti.me</h1>
 
-<div class="container">
-<section id="content" class="hidden animated fadeIn">
-    <h2 id="intro">You have to wake up at <span id="waketime" class="animated pulse" style="display:none;"></span></h2>
-    <div id="picker">
+  <div class="container">
+    <section id="content" class="hidden animated fadeIn">
+      <h2 id="intro">You have to wake up at <span id="waketime" class="animated pulse" style="display:none;"></span></h2>
+      <div id="picker">
         <div class="waketime">
-            <input id="hour" placeholder="hour" maxlength="2"></input>
-            <input id="minute" placeholder="min" maxlength="2"></input>
-            <select id="ampm"><option>AM</option><option>PM</option></select>
-            <input type="button" id="calc" value="Go"></input>
+          <input id="hour" placeholder="hour" maxlength="2"></input>
+          <input id="minute" placeholder="min" maxlength="2"></input>
+          <select id="ampm"><option>AM</option><option>PM</option></select>
+          <input type="button" id="calc" value="Go"></input>
         </div>
         <p class="toppad"><em>or, find out when to wake up if you go to bed now</em></p>
-		<input type="button" value="Zzz" id="sleepnow"></input>
-    </div>
+        <input type="button" value="Zzz" id="sleepnow"></input>
+      </div>
 
-    <div id="wake" class="hidden">
-		<p>If you head to bed right now, you should try to wake up at one of the following times:</p>
-		<div id="wake-times" class="hidden toppad clear"></div>
-    	<p class="toppad tip">A good night's sleep consists of 5-6 complete sleep cycles.</p>
+      <div id="wake" class="hidden">
+        <p>If you head to bed right now, you should try to wake up at one of the following times:</p>
+        <div id="wake-times" class="hidden toppad clear"></div>
+        <p class="toppad tip">A good night's sleep consists of 5-6 complete sleep cycles.</p>
         <p class="tip">It takes the average human <strong>fourteen minutes</strong> to fall asleep.</p>
 
-    </div>
+      </div>
 
-    <div id="sleep" class="hidden">
+      <div id="sleep" class="hidden">
         <p>You should try to <strong>fall asleep</strong> at one of the following times:</p>
         <div id="sleep-times" class="hidden toppad"></div>
-		<p class="tip toppad">The average adult human takes <strong>fourteen minutes</strong> to fall asleep, so plan accordingly!</p>
-		<p class="tip">sleepyti.me works by counting backwards in <strong>sleep cycles</strong>. Sleep cycles typically last <strong>90 minutes</strong>.</p>
-		<p class="tip">Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <em>in between</em> cycles lets you wake up feeling refreshed and alert!</p>
-    </div>
+        <p class="tip toppad">The average adult human takes <strong>fourteen minutes</strong> to fall asleep, so plan accordingly!</p>
+        <p class="tip">sleepyti.me works by counting backwards in <strong>sleep cycles</strong>. Sleep cycles typically last <strong>90 minutes</strong>.</p>
+        <p class="tip">Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <em>in between</em> cycles lets you wake up feeling refreshed and alert!</p>
+      </div>
 
 
-<a class="tooltip back" id="back" href="">
-<img src="images/reset_icon.png" alt="Rest ALL THE THINGS!">
-	<span>Reset</span>
-</a>
+      <a class="tooltip back" id="back" href="">
+        <img src="images/reset_icon.png" alt="Rest ALL THE THINGS!">
+        <span>Reset</span>
+      </a>
 
-<noscript>
-    <div>
-        <p>Hello, and welcome to sleepyti.me. Sleepyti.me is a bedtime calculator that counts backwards in sleep cycles and tells you when to go to sleep so that you can wake up refreshed!</p>
-        <p>This site is written in Javascript, which must be enabled in order to use the page. Thanks for visiting, and sorry for the inconvenience!</p>
-    </div><!-- After No Script -->
-</noscript>
+      <noscript>
+        <div>
+          <p>Hello, and welcome to sleepyti.me. Sleepyti.me is a bedtime calculator that counts backwards in sleep cycles and tells you when to go to sleep so that you can wake up refreshed!</p>
+          <p>This site is written in Javascript, which must be enabled in order to use the page. Thanks for visiting, and sorry for the inconvenience!</p>
+        </div><!-- After No Script -->
+      </noscript>
 
-</section><!-- #content -->
-</div><!-- .container -->
+    </section><!-- #content -->
+  </div><!-- .container -->
 
-<div class="logos">
+  <div class="logos">
 
-	<a href="http://littleboxdesign.com"><img src="images/lbox.png" alt="Little Box Design"></a>
-	<a href="https://github.com/apokusin/sleepyti.me"><img src="images/git.png" alt="GitHub: Social Coding"></a>
-	<a href="http://pokusin.com"><img src="images/pokusin.png" alt="Artur Pokusin's Home Page"></a>
+   <a href="http://littleboxdesign.com"><img src="images/lbox.png" alt="Little Box Design"></a>
+   <a href="https://github.com/apokusin/sleepyti.me"><img src="images/git.png" alt="GitHub: Social Coding"></a>
+   <a href="http://pokusin.com"><img src="images/pokusin.png" alt="Artur Pokusin's Home Page"></a>
 
-</div>
-<div class="sbux" style="position: absolute; bottom: 5px; right: 5px;"><a href="http://www.starbucks.com/store/15625"><img src="images/sbux2.png" alt="Coded and Designed at Starbucks" /></a> </div>
+ </div>
 
-<div class="original delayed" style="position: absolute; top: 74px; right: 0px; z-index:0;"><a href="http://www.sleepyti.me"><img src="images/original_flag.png" alt="Original By David Shaw" /></a> </div>
-<!-- Le Google Analytics -->
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-9559262-2']);
-  _gaq.push(['_trackPageview']);
+ <div class="original delayed" style="position: absolute; top: 74px; right: 0px; z-index:0;"><a href="http://www.sleepyti.me"><img src="images/original_flag.png" alt="Original By David Shaw" /></a> </div>
+ <!-- Le Google Analytics -->
+ <script type="text/javascript">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-9559262-2']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
 </script>
 <script>
