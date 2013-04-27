@@ -288,3 +288,17 @@ input {
 #sleepnow {
   max-width: 100px;
 }
+
+
+.version {
+  position: static;
+  width: 100%;
+  text-align: center;
+  bottom: 15px;
+  color: rgba(255,255,255,0.3);
+  font-weight: 500;
+  font-size: 1em;
+  span {
+    color: rgba(255,255,255,0.56);
+  }
+}
