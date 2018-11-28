@@ -1,3 +1,6 @@
+_This project is stale. The code may run but I no longer maintain it. Cheers!_
+
+
 ### Thank you David Shaw!
 
 Without your original code, I wouldn't have been able to create the awesome design!
